@@ -1,0 +1,5 @@
+[{"CodAviao":1.0, "NomeAviao":"Aviao 1", "AltitudeMaxima":1000.0, "DistanciaMaxima":10000.0, "CodModelo":1.0, "CodCompanhia":1.0},
+ {"CodAviao":2.0, "NomeAviao":"Aviao 2", "AltitudeMaxima":2000.0, "DistanciaMaxima":20000.0, "CodModelo":2.0, "CodCompanhia":2.0},
+ {"CodAviao":3.0, "NomeAviao":"Aviao 3", "AltitudeMaxima":2000.0, "DistanciaMaxima":20000.0, "CodModelo":2.0, "CodCompanhia":2.0},
+ {"CodAviao":4.0, "NomeAviao":"Aviao 4", "AltitudeMaxima":4000.0, "DistanciaMaxima":40000.0, "CodModelo":4.0, "CodCompanhia":4.0},
+ {"CodAviao":5.0, "NomeAviao":"Aviao 5", "AltitudeMaxima":5000.0, "DistanciaMaxima":50000.0, "CodModelo":5.0, "CodCompanhia":5.0}]
