@@ -1,0 +1,15 @@
+/* Layout geral */
+body {
+    padding-top: 60px; /* Altura do header fixo + espaço adicional */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}

@@ -1,0 +1,20 @@
+/* Estilos para o footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-info img {
+    height: 50px; /* Ajuste conforme necessário */
+}
+
+.slogan p {
+    font-style: italic;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include('partials/head', { pageTitle: 'Dashboard', user: user, currentTime: currentTime }) %>
+</head>
+<body>
+    <div class="container">
+        <%- include('partials/header', { pageTitle: 'Dashboard', user: user, currentTime: currentTime }) %>
+        <main>
+          <h1>Bem-vindo, <%= user.name %>!</h1>
+          <% if (errorMessage) { %>
+            <p style="color: red;"><%= errorMessage %></p>
+          <% } %>
+        </main>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>

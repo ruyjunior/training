@@ -1,0 +1,35 @@
+/* Estilos do header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Para garantir que o header esteja sempre acima dos outros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header .info {
+    display: flex;
+    align-items: center;
+}
+
+header .info h1 {
+    margin: 0 20px 0 0;
+}
+
+header .info p {
+    margin: 0 20px 0 0;
+}
+
+header .info .button {
+    margin-left: 20px;
+}

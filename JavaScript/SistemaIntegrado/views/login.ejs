@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="login-container">
+    <img src="/logo_empresa.png" alt="Logo da Empresa">
+    <form action="/login" method="POST" class="login-form">
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required>
+      <button type="submit">Login</button>
+    </form>
+    <div>
+      <img src="<%= qrCodeUrl %>" alt="QR Code Empresa Desenvolvedora" class="qrcode">
+    </div>
+  </div>
+</body>
+</html>

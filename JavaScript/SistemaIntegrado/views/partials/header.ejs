@@ -1,0 +1,19 @@
+<header>
+    <div class="logo">
+        <img src="/logo_empresa.png" alt="Logo da Empresa">
+    </div>
+    <div class="info">
+        <h1><%= pageTitle %></h1>
+        <p>Usuário: <%= user.name %> (Nível: <%= user.accessLevel %>)</p>
+        <p>Data e Hora: <%= currentTime %></p>
+        <a href="/logout" class="button">Logoff</a>
+    </div>
+</header>
+<nav>
+    <ul>
+        <li><a href="/materiais">Materiais</a></li>
+        <li><a href="/estacoes">Estações</a></li>
+        <li><a href="/estoque">Estoque</a></li>
+        <li><a href="/configuracoes">Configurações</a></li>
+    </ul>
+</nav>

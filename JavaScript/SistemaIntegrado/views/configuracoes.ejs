@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('partials/head', { pageTitle: 'Dashboard', user: user, currentTime: currentTime }) %>
+</head>
+<body>
+  <div class="container">
+    <%- include('partials/header', { pageTitle: 'Configurações', user: user, currentTime: currentTime }) %>    <main>
+      <h1>Gerenciamento de Usuários</h1>
+      <form action="/configuracoes/usuario" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="nome">Login:</label>
+        <input type="text" id="login" name="login" required>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <label for="nivel">Nível de Acesso:</label>
+        <select id="nivel" name="nivel">
+          <option value="Operador">Operador</option>
+          <option value="Administrador">Administrador</option>
+          <option value="Engenharia">Engenharia</option>
+          <option value="Supervisor">Supervisor</option>
+          <option value="Manutenção">Manutenção</option>
+          <option value="Qualidade">Qualidade</option>
+        </select>
+        <button type="submit">Adicionar Usuário</button>
+      </form>
+      <h2>Lista de Usuários</h2>
+      <table>
+        <tr>
+          <th>ID</th>
+          <th>Nome</th>
+          <th>Login</th>
+          <th>Senha</th>
+          <th>Nível</th>
+          <th>Ações</th>
+        </tr>
+        <% users.forEach(user => { %>
+          <tr>
+            <td><%= user.id %></td>
+            <td><%= user.name %></td>
+            <td><%= user.username %></td>
+            <td><%= user.password %></td>
+            <td><%= user.accessLevel %></td>
+            <td>
+              <form action="/configuracoes/usuario/<%= user.id %>?_method=PUT" method="POST" style="display: inline;">
+                <button type="submit">Editar</button>
+              </form>
+              <form action="/configuracoes/usuario/<%= user.id %>?_method=DELETE" method="POST" style="display: inline;">
+                <button type="submit">Excluir</button>
+              </form>
+            </td>
+          </tr>
+        <% }) %>
+      </table>
+    </main>
+  </div>
+  <%- include('partials/footer') %>
+</body>
+</html>
